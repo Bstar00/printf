@@ -22,6 +22,9 @@ int print_pointer(va_list types, char buffer[],
 
 	UNUSED(width);
 	UNUSED(size);
+	(void)padd_start;
+	(void)padd;
+	(void)extra_c;
 
 
 	if (addrs == NULL)
@@ -44,6 +47,7 @@ int print_pointer(va_list types, char buffer[],
 	else if (flags & F_SPACE)
 		extra_c = ' ', length++;
 	ind++;
+	return (0);
 }
 /************************* PRINT NON PRINTABLE *************************/
 /**
